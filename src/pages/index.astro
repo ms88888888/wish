@@ -1,15 +1,51 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
 import "../styles/global.css";
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-	<h1 class="text-3xl font-bold text-center underline decoration-5 decoration-blue-500">
-		PRAGMA.VISION
-	  </h1>
-	<Welcome />
+    <div class="header">
+        <div class="app-name">
+            <img src="/assets/heart-icon.svg" alt="WISH.NOW Heart Icon" />
+            <span>Wishful</span>
+        </div>
+        <nav class="navigation">
+            <a href="#how-it-works">How it works</a>
+            <a href="#notifications" class="bell-icon">
+                <img src="/assets/bell-icon.svg" alt="Notifications" />
+            </a>
+        </nav>
+    </div>
+
+    <main class="main-content">
+ 
+
+        <h1 class="headline">Post your wish</h1>
+        <p class="sub-headline">Providers will bid to fulfill it</p>
+
+        <button class="btn btn-primary">
+            <img src="/assets/plus-icon.svg" alt="Create Wish Icon" />
+            Create a wish
+        </button>
+
+        <section class="search-browse-section card">
+            <div class="search-bar">
+                <img src="/assets/search-icon.svg" alt="Search Icon" />
+                <input type="text" placeholder="Search wishes by phone or e-mail" />
+            </div>
+            <button class="btn btn-secondary">Browse wishes</button>
+        </section>
+
+        <section class="location-section card">
+            <h2 class="card-title">Check wishes in Your Area</h2>
+            <div class="map-visual">
+                <img src="/assets/map-pin-icon.svg" alt="Map Pin Icon" />
+            </div>
+        </section>
+    </main>
 </Layout>
+
+<style>
+    /* Scoped styles can be added here if needed, or kept in global.css */
+    /* For simplicity, all styles are currently in global.css */
+</style>

@@ -1,0 +1,12 @@
+<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="snow" width="50" height="50" patternUnits="userSpaceOnUse">
+      <path d="M10 10 L40 40 M10 40 L40 10 M25 5 L25 45 M5 25 L45 25" stroke="#FFF0F5" stroke-width="1" opacity="0.5"/>
+      <circle cx="15" cy="15" r="1.5" fill="#FFF0F5" opacity="0.5"/>
+      <circle cx="35" cy="35" r="1.5" fill="#FFF0F5" opacity="0.5"/>
+      <circle cx="15" cy="35" r="1" fill="#FFF0F5" opacity="0.5"/>
+      <circle cx="35" cy="15" r="1" fill="#FFF0F5" opacity="0.5"/>
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#snow)"/>
+</svg>
